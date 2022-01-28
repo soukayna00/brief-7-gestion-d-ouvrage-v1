@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>D-library</title>
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   
+
+<section>
+
+  <div class="top">
+      <h2>Bienvenu à D-LIBRARY</h2>
+   </div>
+
+
+
+
+
+
+   <form action=""id="form" action="/" method="get" autocomplete="off">
+
+      
+
+
+     <!-- --------------------  Language------------------- -->
+
+   <div class="card1">
+         <h2 id="h22">Langue :</h2>
+         
+         <div id="error-Title"><h4 id="errorr1"></h4></div>
+
+         <select id="lng" >
+            <option value=""> select </option>
+             <option value="Anglais">Anglais</option>
+             <option value="Français">Français</option>
+             <option value="Arabe">Arabe</option>
+         </select>
+   </div>
+
+
+
+
+
+    <!-- --------------------  Book Title ------------------- -->
+
+
+    
+   <div class="card2">
+      <h2 id="h22">Titre d'Oeuvre :</h2>
+     
+
+      <h4 id="errorr2"></h4>
+
+      <input id="bookTitle" type="text">
+      
+      
+   </div>
+
+
+
+
+
+
+    <!-- --------------------  Author ------------------- -->
+
+
+   <div class="card3">
+      <h2 id="h22">Nom d'Auteur :</h2>
+     
+
+         <div id="error-Title"><h4 id="errorr3"></h4></div>
+      <input type="text" id="Author">
+   </div>
+
+    <!-- --------------------  Type ------------------- -->
+
+
+
+
+   <div class="card4">
+      <h2 id="h22">le genre :</h2>
+     
+
+      <div id="error-Title"><h4 id="errorr4"></h4></div>
+
+
+
+
+     
+      <input type="radio" id="Novel" name="fav_language" value="Novel" class="Typ">
+
+      <label id="txt1" for="Novel" >Roman</label><br>
+
+      <input type="radio" id="Essay" name="fav_language" value="Essay" class="Typ">
+
+      <label id="txt2" for="Essay">Essai</label><br>
+
+      <input type="radio" id="Comic" name="fav_language" value="Comic" class="Typ">
+
+           <label  id="txt3" for="Comic">Bande dessinée</label>
+
+
+   </div>
+
+
+    <!-- --------------------  price ------------------- -->
+
+   
+   <div class="card5">
+      <h2 id="h22">Prix en Dh :</h2>
+    
+
+<div id="error-Title"><h4 id="errorr5"></h4></div>
+
+      <input type="number" id="price">
+   </div>
+
+
+
+    <!-- --------------------  reference id ------------------- -->
+
+
+   <div class="card7">
+      <h2 id="h22">Reference d'Oeuvre :</h2>
+
+      <div id="error-Title"><h4 id="errorr6"></h4></div>
+
+      <textarea id="reference"></textarea>
+
+
+   </div>
+<!-- --------------------  date de publication ------------------- -->
+
+   
+<div class="card8">
+   <h2 id="h22">Date Of Publication :</h2>
+   </p>
+
+<div id="error-Title"><h4 id="errorr8"></h4></div>
+
+   <input type="date" id="Date">
+</div>
+
+
+    <!-- --------------------  Book Cover  ------------------- -->
+
+   <div class="Cover">
+      <h2 id="h22">Nombre de page :</h2>
+
+      <div id="error-Title"><h4 id="errorr7"></h4></div>
+
+
+      <input id="nbrofpages"  type="number" name="nbrofpages" >
+
+   </div>
+
+            <button id="button-submit" onclick="onFormSubmit()"> Ajouter</button>
+
+
+</form>
+
+   
+
+</section>
+
+
+
+
+<table class="tablee" id="listt">
+
+   <thead>
+      <tr>
+         
+
+         <th id="Cover">Langue</th>
+         <th id="Language">titre d'oeuvre</th>
+         <th id="Title">Auteur</th>
+         <th id="Author">genre</th>
+         <th id="Type">Prix</th>
+         <th id="Price">reference</th>
+         <th id="Date"> nombre de page</th>
+         <th id="Price">Date de publication</th>
+        
+         <th></th>
+
+
+      </tr>
+   </thead>
+   <tbody>
+
+
+
+   </tbody>
+   
+   <script src="script.js"></script>
+</body>
+</html>
